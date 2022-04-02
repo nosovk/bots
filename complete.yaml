@@ -17,3 +17,13 @@ services:
       - SUPERVUSER=bots
       - SUPERVPASS=botsbots
     command: /usr/local/bin/supervisord -c /etc/supervisor/supervisord.conf
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: botsbots
+      POSTGRES_USER: bots
+      POSTGRES_DB: botsdb
+
