@@ -107,4 +107,3 @@ coverage.xml
 # virtualenv
 venv/
 ENV/
-pgdata
