@@ -23,7 +23,6 @@ RUN pip install suds-jurko==0.6
 RUN pip install pycrypto==2.6.1
 RUN pip install supervisor==3.3.1
 RUN pip install m3-cdecimal==2.3
-RUN pip install psycopg2==2.7.3.2
 RUN pip install paramiko==1.15.2
 
 # Copy complete source
